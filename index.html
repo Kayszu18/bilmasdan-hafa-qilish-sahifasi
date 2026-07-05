@@ -944,13 +944,6 @@ document.head.appendChild(styleTag);
 
 /* "Menga yozing" tugmasi — href foydalanuvchi tomonidan keyinroq to'ldiriladi */
 document.getElementById("writeMeBtn").setAttribute("href", "https://t.me/dilshodbek_s");
-document.getElementById("writeMeBtn").addEventListener("click", (e)=>{
-  const href = e.currentTarget.getAttribute("href");
-  if (!href || href === "#" || href.includes("YOUR_TELEGRAM_USERNAME")){
-    e.preventDefault();
-    alert("Iltimos, kodda 'YOUR_TELEGRAM_USERNAME' qismini o'zgartiring.");
-  }
-});
 </script>
 </body>
 </html>
